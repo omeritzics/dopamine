@@ -6,16 +6,15 @@
     background: var(--theme-album-cover-background);
     display: grid;
     grid-template-columns: 1fr;
-    width: var(--similar-artist-size);
-    min-width: var(--similar-artist-size);
-    aspect-ratio: 1 / 1;
+    width: 120px;
+    height: 120px;
 }
 
 .similar-artist__picture div {
     grid-row-start: 1;
     grid-column-start: 1;
-    width: 100%;
-    height: 100%;
+    width: 120px;
+    height: 120px;
 }
 
 .similar-artist__picture--logo {
@@ -26,28 +25,20 @@
 
 .similar-artist__picture--logo i {
     @extend .font-icon-accent-gradient;
-    font-size: clamp(80px, min(10vw, 13vh), 168px);
-}
-
-.similar-artist__picture--content img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+    font-size: 80px;
 }
 
 .similar-artist__picture--name {
     display: flex;
     justify-content: start;
     align-items: end;
-    padding: clamp(2px, min(1.5vw, 2.5vh), 8px) clamp(4px, min(2vw, 3vh), 12px);
+    padding: 2px 4px;
     background: linear-gradient(to bottom, transparent 60%, #000000cc 100%);
 }
 
 .similar-artist__picture--name p {
     padding: 0px;
     margin: 0px;
-    font-size: clamp(12px, min(1.8vw, 2.5vh), 18px);
 }
 
 .similar-artist-rounded {

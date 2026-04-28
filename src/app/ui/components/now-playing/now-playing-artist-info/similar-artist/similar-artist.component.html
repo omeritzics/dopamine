@@ -11,6 +11,8 @@
         <img
             *ngIf="this.similarArtist.imageUrl"
             [src]="this.similarArtist.imageUrl"
+            [width]="120"
+            [height]="120"
             draggable="false"
             [ngClass]="{ 'similar-artist-rounded': !this.settings.showSquareImages }"
         />
